@@ -117,7 +117,9 @@ const Auth = () => {
 							>
 								<FcGoogle size={30} />
 							</div>
+							{/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 							<div
+								onClick={() => signIn("github", { callbackUrl: "/" })}
 								className="
 								w10
 								h10
