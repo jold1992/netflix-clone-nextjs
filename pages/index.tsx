@@ -1,5 +1,5 @@
 import useCurrentUser from '@/hooks/useCurrentUser';
-import {NextPageContent} from 'next'; // min 1:45:19
+import {NextPageContext} from 'next';
 import { getSession, signOut } from 'next-auth/react';
 
 export async function getServerSideProps(context: NextPageContext){
