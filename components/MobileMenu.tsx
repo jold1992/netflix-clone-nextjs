@@ -8,8 +8,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({visible}) => {
   if(!visible) {
     return null;
   }
-
-  //MIN 2:13:00
+  
   return (
     <div className='bg-black w-56 absolute top-8 py-5 flex-col border-2 border-gray-800 flex'>
         <div className='flex flex-col gap-4'>
