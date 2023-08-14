@@ -19,7 +19,7 @@ export async function getServerSideProps(context: NextPageContext){
 		props: {}
 	}
 }
-//Min 2:27:00
+//Min 2:46:18
 export default function Home() {	
 
 	return (
