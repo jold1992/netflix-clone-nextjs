@@ -21,7 +21,7 @@ export async function getServerSideProps(context: NextPageContext){
 		props: {}
 	}
 }
-//Min 2:55:00
+//Min 3:14:00
 export default function Home() {	
 
 	const { data: movies = [] } = useMovieList()
