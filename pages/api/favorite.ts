@@ -5,11 +5,14 @@ import prismadb from '@/lib/prismadb'
 import serverAuth from '@/lib/serverAuth'
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse){
-    try {
+    try {        
 
         if(req.method === 'POST'){
+            console.log("1");
+            
             const { currentUser } = await serverAuth(req)
-
+            console.log("2");
+            
             const { movieId } = req.body
 
             const existingMovie = await prismadb.movie.findUnique({
